@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad", sans-serif;
+}
+body{
+    min-height: 100vh;
+    background:url('/img/background.jpg') no-repeat ;
+    background-size: cover;
+    background-position: center;
+}
+.home{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.home-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-content h1{
+    color: #fff;
+    font-size: 70px;
+    font-weight: 700;
+}
+.home-content p{
+    color:#fff;
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
+.home-content a{
+    text-decoration:none;
+    border:2px solid #fff;
+    font-size: 1.2rem;
+    color:#fff;
+    background: #c40094;
+    outline: none;
+    box-shadow: 0 0 10px #c40094;
+    width:100px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: .5s;
+}
+.home-content a:hover{
+    background: #0c0c0c;
+    color: #fdf9fc;
+    box-shadow:none
+}
