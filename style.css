@@ -28,6 +28,7 @@ body{
     color: #fff;
     font-size: 70px;
     font-weight: 700;
+    /* text-shadow: 0 0 10px #141314; */
 }
 .home-content p{
     color:#fff;
@@ -36,13 +37,13 @@ body{
 }
 .home-content a{
     text-decoration:none;
+    width:100px;
     border:2px solid #fff;
     font-size: 1.2rem;
     color:#fff;
     background: #c40094;
     outline: none;
     box-shadow: 0 0 10px #c40094;
-    width:100px;
     text-align: center;
     letter-spacing: 1px;
     padding: 10px 20px;
@@ -53,4 +54,42 @@ body{
     background: #0c0c0c;
     color: #fdf9fc;
     box-shadow:none
+}
+.popup{
+    background:white;
+    color:black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);/* to center the popup */
+    width:400px;
+    height:400px;
+    border-radius:10px;
+    /* box-shadow:0 0 10px #1f1f1f; */
+}
+.popup-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding: 30px;
+}
+.popup-content h2{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#notification-form{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    font-size:20px;
+}   
+#notification-form label{
+    margin-bottom: 5px;
+}
+input,select{
+    width:100%;
+    padding:5px;
+    font-size:1rem;
+    margin-bottom:10px;
 }

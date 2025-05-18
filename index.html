@@ -14,5 +14,23 @@
             <a href="#" class="btn btn-check">Send</a>
         </div>
     </section>
+    <div class="popup">
+        <div class="popup-content">
+            <h2>Fill the form</h2>
+            <form action="" id="notification-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required >
+                <label for="messgae">Message:</label>
+                <input type="text" id="message" required >
+                <label for="type">Notification Type:</label>
+                <select id="type" required>
+                    <option value="select" disabled selected hidden>SELECT</option>
+                    <option value="sms">SMS</option>
+                    <option value="email">Email</option>
+                    <option value="inapp">In-App</option>
+                </select>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
