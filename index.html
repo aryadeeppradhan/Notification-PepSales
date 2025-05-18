@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css" />
     <title>Notify</title>
 </head>
 <body>
@@ -29,8 +30,14 @@
                     <option value="email">Email</option>
                     <option value="inapp">In-App</option>
                 </select>
+                <div id="extraField"></div>
+                <button type="submit">Send</button>
             </form>
         </div>
     </div>
+    <script src="script.js"></script>
+    <!-- for country code -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+
 </body>
 </html>
