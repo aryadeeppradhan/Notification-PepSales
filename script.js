@@ -6,7 +6,7 @@ checkButton.onclick=()=>{
 }
 const typeSelect=document.getElementById("type");
 const extraField=document.getElementById("extraField");
-
+const message=document.getElementById("message");
 typeSelect.addEventListener("change",()=>{
     const selected=typeSelect.value;
     extraField.innerHTML="";
@@ -29,5 +29,21 @@ typeSelect.addEventListener("change",()=>{
         <label for="email">Email Address:</label>
         <input type="email" id="email" required>
         </div>`;
+    }else{
+        const form = document.getElementById("notification-form");
+form.addEventListener("submit", () => {
+    const msg=message.value;
+    const username=document.getElementById("username").value;
+    Notification.requestPermission().then(perm => {
+        if (perm === "granted") {
+            new Notification(`${username} sent you a message!`, {
+                body: msg,
+                icon:"./img/logo.png",
+            });
+        } else {
+            alert("Notification permission denied.");
+        }
+    });
+});
     }
 });
